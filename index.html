@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFU</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/Logo.svg" alt="FBI Seal">
+            <h1>Investigaciones Federales Unidas - IFU</h1>
+        </div>
+    </header>
+
+    <nav>
+        <a href="https://www.fbi.gov/wanted">Mas Buscados</a> 
+        <a href="https://www.fbi.gov/how-we-can-help-you/scams-and-safety">Seguridad</a>
+        <a href="https://www.fbi.gov/news/testimony">Testimonios</a>
+        <a href="https://www.fbi.gov/news/news-blog">Noticias</a>
+        <a href="https://www.fbi.gov/news/press-releases">Comunicados de prensa</a>
+    </nav>
+
+    <div class="container">
+        <section class="featured">
+            <h2>Bienvenido al sitio web del IFU</h2>
+            <p>Aquí se ofrece información básica sobre cómo contactar al IFU y sobre el tipo de delitos que investiga. También se pueden leer artículos sobre cómo protegerse contra el fraude, qué hacer ante un delito y cómo mantenerse seguro. Continuaremos agregando información con frecuencia, y se invita al público a visitar nuestro sitio web a menudo.</p>
+            <button class="featured-button" onclick="openModal()">Contactanos</button>
+        </section>
+
+        <section class="cards">
+            <div class="card">
+                <img src="/buscado3.png">
+               <Center><h3>Más Buscado</h3></Center>
+            </div>
+            <div class="card">
+                <img src="/Buscado2.png">
+                <Center><h3>Terrorista</h3></Center>
+            </div>
+            <div class="card">
+                <img src="/desaparecida2.png">
+                <center><h3>Persona Desaparecida</h3></center>
+            </div>
+        </section>
+    </div>
+    
+
+    <footer>
+        <p>&copy; Investigaciones Federales Unidas | <a href="https://www.fbi.gov/privacy-policy">Privacidad</a> | <a href="https://www.google.com/search?q=Quentin+Trembley&sca_esv=fde65a004f3df79d&rlz=1C1YTUH_esCO1107CO1107&sxsrf=AHTn8zpskhGPvVSHR_55BgF-LC808vQsng%3A1740426986275&ei=6s68Z_a-EKaHwbkP8JCA6AM&ved=0ahUKEwj225jii92LAxWmQzABHXAIAD0Q4dUDCBA&uact=5&oq=Quentin+Trembley&gs_lp=Egxnd3Mtd2l6LXNlcnAiEFF1ZW50aW4gVHJlbWJsZXkyChAuGIAEGEMYigUyBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgUQABiABDIZEC4YgAQYQxiKBRiXBRjcBBjeBBjgBNgBAUjgAVAAWABwAHgAkAEAmAGSAaABkgGqAQMwLjG4AQPIAQD4AQGYAgGgApkBmAMA4gMFEgExIEC6BgYIARABGBSSBwMwLjGgB8QJ&sclient=gws-wiz-serp">Presidente De America</a></p>
+    </footer>
+
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <h2>Contactanos</h2>
+            <form id="contactForm" onsubmit="return submitForm(event)">
+                <input type="text" id="name" name="name" placeholder="Nombre" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <textarea id="message" name="message" placeholder="Mensaje" rows="4" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+             <div id="messageResult"></div>
+        </div>
+    </div>
+
+ 
+
+</body>
+</html>
